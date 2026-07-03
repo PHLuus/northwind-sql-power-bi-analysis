@@ -18,11 +18,13 @@ Northwind is a Microsoft sample database simulating a trading company's orders, 
 - Which customers generate the most revenue?
 - How long does it take to fulfill an order from placement to shipment?
 - Are some shipping carriers faster than others? 
+- Which products produces the most revenue?
 
 ## Key Findings
 - Top revenue customers: QUICK-Stop, Ernst Handel, and Save-a-lot each generated over $100k in revenue
 - Average order fulfillment time: 8 days
 -  Federal Shipping is the fastest carrier at 7 days average fulfillment, followed by Speedy Express (8 days) and United Package (9 days)
+- - Côte de Blaye is by far the top revenue-generating product at over $141,000 — more than 1.7x the second-highest product (Thüringer Rostbratwurst)
 ## SQL Queries
 | File | Description |
 |------|-------------|
@@ -30,6 +32,7 @@ Northwind is a Microsoft sample database simulating a trading company's orders, 
 | [`02_revenue_by_customer.sql`](sql/02_revenue_by_customer.sql) | Total revenue and order count per customer |
 | [`03_order_fulfillment_time.sql`](sql/03_order_fulfillment_time.sql) | Average days from order to shipment |
 | [`04_fulfillment_by_carrier.sql`](sql/04_fulfillment_by_carrier.sql) | Average fulfillment time and order volume by shipping carrier |
+| [`05_top_products_by_revenue.sql`](sql/05_products_by_revenue.sql) | Total revenue by product, ranked highest to lowest |
 
 ## Project Structure
 ```
@@ -38,8 +41,9 @@ northwind-sql-powerbi-analysis/
 ├── sql/
 │   ├── 01_data_validation.sql
 │   ├── 02_revenue_by_customer.sql
-│   ├── 03_order_fulfillment_time.sql   
-│   └── 04_fulfillment_by_carrier.sql
+│   ├── 03_order_fulfillment_time.sql
+│   ├── 04_fulfillment_by_carrier.sql  
+│   └── 05_products_by_revenue.sql
 │
 ├── powerbi/
 │   └── northwind_dashboard.pbix
