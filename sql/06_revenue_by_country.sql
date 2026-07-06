@@ -6,3 +6,4 @@ SELECT
 FROM [Order Details] od
 JOIN Orders o ON od.OrderID = o.OrderID
 GROUP BY o.ShipCountry
+ORDER BY TotalRevenueByCountry DESC;
