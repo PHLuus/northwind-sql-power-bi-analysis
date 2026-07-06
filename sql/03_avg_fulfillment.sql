@@ -1,3 +1,3 @@
 SELECT
-	AVG(DATEDIFF(day, OrderDate, ShippedDate)) AS AvgFulfillmentDays
+	AVG(CAST(DATEDIFF(day, OrderDate, ShippedDate)AS FLOAT)) AS AvgFulfillmentDays
 FROM Orders;
