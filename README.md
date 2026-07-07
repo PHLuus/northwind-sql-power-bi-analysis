@@ -19,12 +19,13 @@ Northwind is a Microsoft sample database simulating a trading company's orders, 
 - How long does it take to fulfill an order from placement to shipment?
 - Are some shipping carriers faster than others? 
 - Which products produces the most revenue?
-- Which countries generate the most revenue? 
+- Which countries generate the most revenue?
+- Who are the top rated customers by revenue?  
 
 ## Key Findings
 - Top revenue customers: QUICK-Stop, Ernst Handel, and Save-a-lot each generated over $100k in revenue
 - Average order fulfillment time: 8.49 days (initially calculated as 8 days due to SQL integer rounding - corrected after cross-checking against Power BI's DAX calculation)
--  Federal Shipping is the fastest carrier at 7 days average fulfillment, followed by Speedy Express (8 days) and United Package (9 days)
+-  Federal Shipping is the fastest carrier at 7.47 days average fulfillment, followed by Speedy Express 8.57 days and United Package 9.23 days
 - Côte de Blaye is by far the top revenue-generating product at over $141,000 — more than 1.7x the second-highest product (Thüringer Rostbratwurst)
 - USA and Germany are the top two markets by revenue ($245K and $230K), together generating nearly 37.6% of total revenue across all 21 countries
 - Total revenue across all orders: $1 265 793.04
@@ -39,6 +40,7 @@ Northwind is a Microsoft sample database simulating a trading company's orders, 
 | [`05_top_products_by_revenue.sql`](sql/05_products_by_revenue.sql) | Total revenue by product, ranked highest to lowest |
 | [`06_revenue_by_country.sql`](sql/06_revenue_by_country.sql) | Total revenue by shipping destination country, including % of total revenue |
 | [`07_total_revenue.sql`](sql/07_total_revenue.sql) | Total revenue |
+| [`08_customer_revenue_rank.sql`](sql/08_customer_revenue_rank.sql) | Revenue rank |
 
 
 ## Project Structure
@@ -52,7 +54,8 @@ northwind-sql-powerbi-analysis/
 │   ├── 04_fulfillment_by_carrier.sql  
 │   ├── 05_products_by_revenue.sql
 │   ├── 06_revenue_by_country.sql
-│   └── 07_total_revenue.sql
+│   ├── 07_total_revenue.sql
+│   └── 08_customer_revenue_rank.sql
 │
 ├── powerbi/
 │   └── northwind_dashboard.pbix
