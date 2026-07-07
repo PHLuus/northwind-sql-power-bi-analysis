@@ -64,12 +64,18 @@ northwind-sql-powerbi-analysis/
 │   └── northwind_dashboard.pbix
 │
 ├── screenshots/
-│   └── dashboard_overview.png
+│   ├── sales_overview.png
+│   └── operations_fulfillment.png
 │
 └── README.md
 ```
 ## Dashboard Preview
-Add screen shots when available
+
+### Sales Overview
+![Sales Overview](screenshots/sales_overview.png)
+
+### Operations & Fulfillment
+![Operations & Fullfillment](screenshots/operations_fulfillment.png)
 
 ## About This Project
 Built as part of a data analytics portfolio, applying SQL and Power BI skills alongside prior domain experience in supply chain and logistics operations.
