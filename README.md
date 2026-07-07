@@ -29,6 +29,7 @@ Northwind is a Microsoft sample database simulating a trading company's orders, 
 - Côte de Blaye is by far the top revenue-generating product at over $141,000 — more than 1.7x the second-highest product (Thüringer Rostbratwurst)
 - USA and Germany are the top two markets by revenue ($245K and $230K), together generating nearly 37.6% of total revenue across all 21 countries
 - Total revenue across all orders: $1 265 793.04
+- Ireland has the slowest average fulfillment time (11 days across 19 orders), while Finland is fastest (5.59 days across 22 orders) — a notable gap that may warrant investigating regional logistics or carrier assignment differences
 
 ## SQL Queries
 | File | Description |
@@ -41,6 +42,7 @@ Northwind is a Microsoft sample database simulating a trading company's orders, 
 | [`06_revenue_by_country.sql`](sql/06_revenue_by_country.sql) | Total revenue by shipping destination country, including % of total revenue |
 | [`07_total_revenue.sql`](sql/07_total_revenue.sql) | Total revenue |
 | [`08_customer_revenue_rank.sql`](sql/08_customer_revenue_rank.sql) | Revenue rank |
+| [`09_fulfillment_by_country.sql`](sql/09_fulfillment_by_country.sql) | Average fulfillment time and order volume by shipping country |
 
 
 ## Project Structure
@@ -55,7 +57,8 @@ northwind-sql-powerbi-analysis/
 │   ├── 05_products_by_revenue.sql
 │   ├── 06_revenue_by_country.sql
 │   ├── 07_total_revenue.sql
-│   └── 08_customer_revenue_rank.sql
+│   ├── 08_customer_revenue_rank.sql
+│   └── 09_fulfillmant_by_country.sql 
 │
 ├── powerbi/
 │   └── northwind_dashboard.pbix
